@@ -1,0 +1,8 @@
+[build]
+    publish = "public"
+    command = "./build.sh"
+[context.production.environment]
+# I'm fixing Hugo version to make sure my theme doesn't break
+HUGO_VERSION = "0.48.1"
+HUGO_ENV = "production"
+PONZU_HOST_URL = ""
